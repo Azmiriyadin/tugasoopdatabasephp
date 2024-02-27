@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tugas Belajar Session Cookies</title>
+    <style>
+        .data-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .data-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Data yang Disimpan</h2>
+    <table class="data-table" id="dataDisimpan">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>WhatsApp</th>
+                <th>Alamat</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <hr>
+    <h2>Form Data Diri</h2>
+    <div>
+        <label for="namaInput">Nama:</label>
+        <input type="text" id="namaInput">
+    </div>
+    <div>
+        <label for="emailInput">Email:</label>
+        <input type="text" id="emailInput">
+    </div>
+    <div>
+        <label for="whatsappInput">WhatsApp:</label>
+        <input type="text" id="whatsappInput">
+    </div>
+    <div>
+        <label for="alamatInput">Alamat:</label>
+        <input type="text" id="alamatInput">
+    </div>
+    <button type="button" onclick="simpan()">Simpan</button>
+
+    <script>
+        function simpan() {
+            var nama = document.getElementById("namaInput").value;
+            var email = document.getElementById("emailInput").value;
+            var whatsapp = document.getElementById("whatsappInput").value;
+            var alamat = document.getElementById("alamatInput").value;
+
+            if (nama && email && whatsapp && alamat) {
+                var existingData = getCookieValue("dataDisimpan");
+                var newData = { nama: nama, email: email, whatsapp: whatsapp, alamat: alamat };
+                var allData = existingData ? JSON.parse(existingData) : [];
+                allData.push(newData);
+                document.cookie = `dataDisimpan=${JSON.stringify(allData)};`;
+                tampilData(allData);
+                alert("Data berhasil disimpan!");
+            } else {
+                alert("Data gagal disimpan karena isian form tidak lengkap!");
+            }
+        }
+
+        function tampilData(data) {
+            var tableBody = document.querySelector("#dataDisimpan tbody");
+            var html = "";
+            data.forEach(function(item) {
+                html += `
+                    <tr>
+                        <td>${item.nama}</td>
+                        <td>${item.email}</td>
+                        <td>${item.whatsapp}</td>
+                        <td>${item.alamat}</td>
+                    </tr>
+                `;
+            });
+            tableBody.innerHTML = html;
+        }
+
+        function getCookieValue(cookieName) {
+            var name = cookieName + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var cookieArray = decodedCookie.split(';');
+            for(var i = 0; i < cookieArray.length; i++) {
+                var cookie = cookieArray[i].trim();
+                if (cookie.indexOf(name) == 0) {
+                    return cookie.substring(name.length, cookie.length);
+                }
+            }
+            return "";
+        }
+
+        window.onload = function() {
+            var existingData = getCookieValue("dataDisimpan");
+            if (existingData) {
+                tampilData(JSON.parse(existingData));
+            }
+        };
+    </script>
+</body>
+</html>
