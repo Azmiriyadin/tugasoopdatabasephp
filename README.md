@@ -1,4 +1,4 @@
-# Proyek Tugas Belajar Session Cookies
+# Projek Tugas Belajar Session Cookies
 
 Projek ini merupakan tugas belajar tentang penggunaan session cookies dalam pembuatan formulir data sederhana. Formulir ini memungkinkan pengguna untuk memasukkan data seperti Nama, Email, WhatsApp, dan Alamat. Data yang dimasukkan akan disimpan menggunakan session cookies di browser pengguna.
 
@@ -18,7 +18,7 @@ Projek ini merupakan tugas belajar tentang penggunaan session cookies dalam pemb
 
 1. Isi formulir dengan data yang ingin Anda simpan.
 2. Klik tombol "Simpan" untuk menyimpan data.
-3. Data yang disimpan akan ditampilkan di bawah formulir.
+3. Data yang disimpan akan ditampilkan di atas formulir.
 4. Jika Anda menambahkan data baru, data akan ditambahkan di bawah data yang sudah ada.
 
 ## Bukti Hasil
