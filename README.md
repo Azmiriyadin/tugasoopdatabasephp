@@ -23,4 +23,4 @@ Projek ini merupakan tugas belajar tentang penggunaan session cookies dalam pemb
 
 ## Bukti Hasil
 
-![Gambar Hasil Projek](projekcookies/gambar/1.jpg "Hasil Projek ketika di lokal")
+![Gambar Hasil Projek](gambar/1.jpg "Hasil Projek ketika di lokal")
