@@ -1,8 +1,8 @@
 <?php
-$host = "localhost"; // Ganti sesuai dengan host Anda
-$username = "root"; // Ganti sesuai dengan username MySQL Anda
-$password = ""; // Ganti sesuai dengan password MySQL Anda
-$database = "tugas1"; // Ganti sesuai dengan nama database Anda
+$host = "localhost"; 
+$username = "root"; 
+$password = ""; 
+$database = "tugas1"; 
 
 // Buat koneksi
 $koneksi = mysqli_connect($host, $username, $password, $database);
