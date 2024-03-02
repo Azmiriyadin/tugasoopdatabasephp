@@ -11,7 +11,7 @@ Proyek ini adalah contoh implementasi sederhana dari penggunaan PHP untuk membua
 ## Cara Menggunakan
 
 1. Pastikan Anda memiliki server web yang mendukung PHP dan MySQL.
-2. Import file `database.sql` ke dalam database MySQL Anda.
+2. Import file `data1.sql` ke dalam database MySQL Anda.
 3. Konfigurasi koneksi database MySQL Anda di file `koneksi.php`.
 4. Buka browser dan akses `localhost/namafolder` untuk melihat halaman form isian.
 5. Isi form dengan data yang diminta dan klik tombol "Simpan".
