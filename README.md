@@ -1,26 +1,31 @@
-# Projek Tugas Belajar Session Cookies
+# Projek PHP OOP terkoneksi dengan Database MySQL 
 
-Projek ini merupakan tugas belajar tentang penggunaan session cookies dalam pembuatan formulir data sederhana. Formulir ini memungkinkan pengguna untuk memasukkan data seperti Nama, Email, WhatsApp, dan Alamat. Data yang dimasukkan akan disimpan menggunakan session cookies di browser pengguna.
+Proyek ini adalah contoh implementasi sederhana dari penggunaan PHP untuk membuat sebuah form isian yang menyimpan data ke dalam database MySQL. Data yang telah tersimpan akan ditampilkan kembali di web.
 
 ## Fitur
 
-- Formulir input data dengan inputan untuk Nama, Email, WhatsApp, dan Alamat.
-- Data yang dimasukkan disimpan menggunakan session cookies.
-- Data yang disimpan tetap ada bahkan setelah halaman direfresh.
-- Pengguna dapat menambahkan data baru dan data akan ditampilkan di bawah data yang sudah ada.
+- Form isian untuk mengumpulkan data.
+- Penyimpanan data ke dalam database MySQL.
+- Menampilkan data yang tersimpan di web.
 
-## Instalasi
+## Cara Menggunakan
 
-1. Clone repositori ini ke dalam sistem lokal Anda.
-2. Buka file `index.html` pada browser untuk melihat proyek.
+1. Pastikan Anda memiliki server web yang mendukung PHP dan MySQL.
+2. Import file `database.sql` ke dalam database MySQL Anda.
+3. Konfigurasi koneksi database MySQL Anda di file `koneksi.php`.
+4. Buka browser dan akses `localhost/namafolder` untuk melihat halaman form isian.
+5. Isi form dengan data yang diminta dan klik tombol "Simpan".
+6. Data yang dimasukkan akan disimpan ke dalam database dan ditampilkan di web.
 
-## Penggunaan
+## Contoh Implementasi
 
-1. Isi formulir dengan data yang ingin Anda simpan.
-2. Klik tombol "Simpan" untuk menyimpan data.
-3. Data yang disimpan akan ditampilkan di atas formulir.
-4. Jika Anda menambahkan data baru, data akan ditambahkan di bawah data yang sudah ada.
+Anda bisa melihat contoh implementasi di file [index.php](index.php).
 
-## Bukti Hasil
+## Bukti Hasil Proyek
 
-![Gambar Hasil Projek](gambar/1.jpg "Hasil Projek ketika di lokal")
+![Data 1](tugasoopdatabasephp/gambar/data1.jpg)
+![Data 2](tugasoopdatabasephp/gambar/data2.jpg)
+
+##projek ini dibuat oleh
+
+M AZMI ZAMZAMI RIYADIN
