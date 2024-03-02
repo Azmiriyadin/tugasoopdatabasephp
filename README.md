@@ -23,7 +23,10 @@ Anda bisa melihat contoh implementasi di file [index.php](index.php).
 
 ## Bukti Hasil Proyek
 
+### gambar 1
 ![Gambar 1](gambar/data1.jpg)
+
+### gambar2
 ![Gambar 2](gambar/data2.jpg)
 
 ## projek ini dibuat oleh
