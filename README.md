@@ -23,9 +23,9 @@ Anda bisa melihat contoh implementasi di file [index.php](index.php).
 
 ## Bukti Hasil Proyek
 
-![Data 1](tugasoopdatabasephp/gambar/data1.jpg)
-![Data 2](tugasoopdatabasephp/gambar/data2.jpg)
+![Gambar 1](gambar/data1.jpg)
+![Gambar 2](gambar/data2.jpg)
 
-##projek ini dibuat oleh
+## projek ini dibuat oleh
 
 M AZMI ZAMZAMI RIYADIN
